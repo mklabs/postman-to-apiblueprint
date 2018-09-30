@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Generate API Blueprint from postman collection dump",
   "main": "index.js",
+  "bin": "bin/postman-to-apiblueprint.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/mklabs/postman-to-apiblueprint#readme",
   "dependencies": {
+    "debug": "^4.0.1",
     "hbs": "^4.0.1",
     "minimist": "^1.2.0"
   }

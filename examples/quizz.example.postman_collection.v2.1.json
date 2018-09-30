@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "9cd7c014-71f5-476c-b6a6-083865b77e91",
+		"name": "ggquizz",
+		"description": "This API enables users to view questions and contribute to them.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/questions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"questions"
+					]
+				},
+				"description": "Allow users to see all questions stored in the database."
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/questions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:3000/questions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"questions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "685",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Sep 2018 10:27:44 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2ad-l36Bh3cgqp0CqUTdAKWXe/JIbF0\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "x-request-id",
+							"value": "d962c84d-1371-42d4-bbb3-caad4b219d95",
+							"name": "x-request-id",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "[{\"answers\":[\"Hurlevent\",\"Stormwind\"],\"question\":\"Quel est le nom de la célèbre ville de l'Alliance ?\",\"date\":\"2018-09-30T10:05:39.183Z\",\"id\":\"5bb09ff34ba203118d570b1a\"},{\"answers\":[\"Hurlevent\",\"Stormwind\"],\"question\":\"Quel est le nom de la célèbre ville de l'Alliance ?\",\"date\":\"2018-09-30T10:06:39.335Z\",\"id\":\"5bb0a02fa1f32c11994e3772\"},{\"answers\":[\"Hurlevent\",\"Stormwind\"],\"question\":\"Quel est le nom de la célèbre ville de l'Alliance ?\",\"date\":\"2018-09-30T10:07:27.011Z\",\"id\":\"5bb0a05f12881d11af0839ce\"},{\"answers\":[\"Hurlevent\",\"Stormwind\"],\"question\":\"Quel est le nom de la célèbre ville de l'Alliance ?\",\"date\":\"2018-09-30T10:27:40.253Z\",\"id\":\"5bb0a51c18bc60126786cf13\"}]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/questions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"question\": \"Quel est le nom de la célèbre ville de la Horde ?\",\n\t\"answers\": [\"Ogrimmar\"]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"questions"
+					]
+				},
+				"description": "Allow users to contribute a new question to the database."
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/questions",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"question\": \"Quel est le nom de la célèbre ville de la Horde ?\",\n\t\"answers\": [\"Ogrimmar\"]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/questions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"questions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "197",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 30 Sep 2018 11:03:36 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c5-cv2u5sTrHwCdMaC1Dca12N1EbiQ\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "x-request-id",
+							"value": "a09e628f-faa8-4d09-828b-4b4f7f979bc0",
+							"name": "x-request-id",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "{\"message\":\"Question created\",\"question\":{\"answers\":[\"Ogrimmar\"],\"question\":\"Quel est le nom de la célèbre ville de la Horde ?\",\"date\":\"2018-09-30T11:03:36.307Z\",\"id\":\"5bb0ad8868282f197f759d6d\"}}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "88c8540f-49cd-4123-ba75-454cdc7d940b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "29c5f809-0003-4925-baec-ccb1399debf1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
