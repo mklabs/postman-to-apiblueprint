@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "bin/postman-to-apiblueprint.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate-examples": "postman-to-apiblueprint examples/quizz.example.postman_collection.v2.1.json --domain http://localhost:3000 > examples/readme.md"
   },
   "repository": {
     "type": "git",
