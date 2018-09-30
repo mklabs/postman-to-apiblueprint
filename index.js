@@ -58,5 +58,6 @@ const run = opts => {
 };
 
 module.exports = {
-  run
+  run,
+  generate
 };

@@ -1,0 +1,338 @@
+{
+  "element": "parseResult",
+  "content": [
+    {
+      "element": "category",
+      "meta": {
+        "classes": {
+          "element": "array",
+          "content": [
+            {
+              "element": "string",
+              "content": "api"
+            }
+          ]
+        },
+        "title": {
+          "element": "string",
+          "content": "ggquizz"
+        }
+      },
+      "attributes": {
+        "metadata": {
+          "element": "array",
+          "content": [
+            {
+              "element": "member",
+              "meta": {
+                "classes": {
+                  "element": "array",
+                  "content": [
+                    {
+                      "element": "string",
+                      "content": "user"
+                    }
+                  ]
+                }
+              },
+              "content": {
+                "key": {
+                  "element": "string",
+                  "content": "FORMAT"
+                },
+                "value": {
+                  "element": "string",
+                  "content": "1A"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "content": [
+        {
+          "element": "copy",
+          "content": "This API enables users to view questions and contribute to them."
+        },
+        {
+          "element": "resource",
+          "meta": {
+            "title": {
+              "element": "string",
+              "content": "http://localhost:3000/questions"
+            }
+          },
+          "attributes": {
+            "href": {
+              "element": "string",
+              "content": "/questions"
+            }
+          },
+          "content": [
+            {
+              "element": "transition",
+              "meta": {
+                "title": {
+                  "element": "string",
+                  "content": "http://localhost:3000/questions"
+                }
+              },
+              "content": [
+                {
+                  "element": "copy",
+                  "content": "Allow users to see all questions stored in the database."
+                },
+                {
+                  "element": "httpTransaction",
+                  "content": [
+                    {
+                      "element": "httpRequest",
+                      "attributes": {
+                        "method": {
+                          "element": "string",
+                          "content": "GET"
+                        }
+                      },
+                      "content": []
+                    },
+                    {
+                      "element": "httpResponse",
+                      "attributes": {
+                        "statusCode": {
+                          "element": "string",
+                          "content": "200"
+                        },
+                        "headers": {
+                          "element": "httpHeaders",
+                          "content": [
+                            {
+                              "element": "member",
+                              "content": {
+                                "key": {
+                                  "element": "string",
+                                  "content": "Content-Type"
+                                },
+                                "value": {
+                                  "element": "string",
+                                  "content": "application/json; charset=utf-8"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "content": [
+                        {
+                          "element": "asset",
+                          "meta": {
+                            "classes": {
+                              "element": "array",
+                              "content": [
+                                {
+                                  "element": "string",
+                                  "content": "messageBody"
+                                }
+                              ]
+                            }
+                          },
+                          "attributes": {
+                            "contentType": {
+                              "element": "string",
+                              "content": "application/json; charset=utf-8"
+                            }
+                          },
+                          "content": "[\n    {\n        \"answers\": [\n            \"Hurlevent\",\n            \"Stormwind\"\n        ],\n        \"question\": \"Quel est le nom de la célèbre ville de l'Alliance ?\",\n        \"date\": \"2018-09-30T10:05:39.183Z\",\n        \"id\": \"5bb09ff34ba203118d570b1a\"\n    },\n    {\n        \"answers\": [\n            \"Hurlevent\",\n            \"Stormwind\"\n        ],\n        \"question\": \"Quel est le nom de la célèbre ville de l'Alliance ?\",\n        \"date\": \"2018-09-30T10:06:39.335Z\",\n        \"id\": \"5bb0a02fa1f32c11994e3772\"\n    },\n    {\n        \"answers\": [\n            \"Hurlevent\",\n            \"Stormwind\"\n        ],\n        \"question\": \"Quel est le nom de la célèbre ville de l'Alliance ?\",\n        \"date\": \"2018-09-30T10:07:27.011Z\",\n        \"id\": \"5bb0a05f12881d11af0839ce\"\n    },\n    {\n        \"answers\": [\n            \"Hurlevent\",\n            \"Stormwind\"\n        ],\n        \"question\": \"Quel est le nom de la célèbre ville de l'Alliance ?\",\n        \"date\": \"2018-09-30T10:27:40.253Z\",\n        \"id\": \"5bb0a51c18bc60126786cf13\"\n    }\n]\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "element": "resource",
+          "meta": {
+            "title": {
+              "element": "string",
+              "content": "http://localhost:3000/questions"
+            }
+          },
+          "attributes": {
+            "href": {
+              "element": "string",
+              "content": "/questions"
+            }
+          },
+          "content": [
+            {
+              "element": "transition",
+              "meta": {
+                "title": {
+                  "element": "string",
+                  "content": "http://localhost:3000/questions"
+                }
+              },
+              "content": [
+                {
+                  "element": "copy",
+                  "content": "Allow users to contribute a new question to the database."
+                },
+                {
+                  "element": "httpTransaction",
+                  "content": [
+                    {
+                      "element": "httpRequest",
+                      "attributes": {
+                        "method": {
+                          "element": "string",
+                          "content": "POST"
+                        },
+                        "headers": {
+                          "element": "httpHeaders",
+                          "content": [
+                            {
+                              "element": "member",
+                              "content": {
+                                "key": {
+                                  "element": "string",
+                                  "content": "Content-Type"
+                                },
+                                "value": {
+                                  "element": "string",
+                                  "content": "application/json"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "content": [
+                        {
+                          "element": "asset",
+                          "meta": {
+                            "classes": {
+                              "element": "array",
+                              "content": [
+                                {
+                                  "element": "string",
+                                  "content": "messageBody"
+                                }
+                              ]
+                            }
+                          },
+                          "attributes": {
+                            "contentType": {
+                              "element": "string",
+                              "content": "application/json"
+                            }
+                          },
+                          "content": "{\n    \"question\": \"Quel est le nom de la célèbre ville de la Horde ?\",\n    \"answers\": [\n        \"Ogrimmar\"\n    ]\n}\n"
+                        }
+                      ]
+                    },
+                    {
+                      "element": "httpResponse",
+                      "attributes": {
+                        "statusCode": {
+                          "element": "string",
+                          "content": "200"
+                        },
+                        "headers": {
+                          "element": "httpHeaders",
+                          "content": [
+                            {
+                              "element": "member",
+                              "content": {
+                                "key": {
+                                  "element": "string",
+                                  "content": "Content-Type"
+                                },
+                                "value": {
+                                  "element": "string",
+                                  "content": "application/json; charset=utf-8"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "content": [
+                        {
+                          "element": "asset",
+                          "meta": {
+                            "classes": {
+                              "element": "array",
+                              "content": [
+                                {
+                                  "element": "string",
+                                  "content": "messageBody"
+                                }
+                              ]
+                            }
+                          },
+                          "attributes": {
+                            "contentType": {
+                              "element": "string",
+                              "content": "application/json; charset=utf-8"
+                            }
+                          },
+                          "content": "{\n    \"message\": \"Question created\",\n    \"question\": {\n        \"answers\": [\n            \"Ogrimmar\"\n        ],\n        \"question\": \"Quel est le nom de la célèbre ville de la Horde ?\",\n        \"date\": \"2018-09-30T11:03:36.307Z\",\n        \"id\": \"5bb0ad8868282f197f759d6d\"\n    }\n}\n"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "element": "annotation",
+      "meta": {
+        "classes": {
+          "element": "array",
+          "content": [
+            {
+              "element": "string",
+              "content": "warning"
+            }
+          ]
+        }
+      },
+      "attributes": {
+        "code": {
+          "element": "number",
+          "content": 2
+        },
+        "sourceMap": {
+          "element": "array",
+          "content": [
+            {
+              "element": "sourceMap",
+              "content": [
+                {
+                  "element": "array",
+                  "content": [
+                    {
+                      "element": "number",
+                      "content": 1778
+                    },
+                    {
+                      "element": "number",
+                      "content": 49
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "content": "the resource '/questions' is already defined"
+    }
+  ]
+}

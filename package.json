@@ -5,7 +5,8 @@
   "main": "index.js",
   "bin": "bin/postman-to-apiblueprint.js",
   "scripts": {
-    "generate-examples": "postman-to-apiblueprint examples/quizz.example.postman_collection.v2.1.json --domain http://localhost:3000 > examples/readme.md"
+    "generate-examples": "postman-to-apiblueprint examples/quizz.example.postman_collection.v2.1.json --domain http://localhost:3000 > examples/readme.md",
+    "test": "npm run generate-examples && mocha"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,9 @@
     "debug": "^4.0.1",
     "hbs": "^4.0.1",
     "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "drafter": "^2.0.0-pre.0",
+    "mocha": "^5.2.0"
   }
 }
