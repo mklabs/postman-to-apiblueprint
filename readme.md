@@ -1,4 +1,4 @@
-# postman-to-apiblueprint
+# postman-to-apiblueprint [![Build Status](https://travis-ci.org/mklabs/postman-to-apiblueprint.svg?branch=master)](https://travis-ci.org/mklabs/postman-to-apiblueprint)
 
 A relatively simple tool to generate [API Blueprint](https://apiblueprint.org)
 from a Postman collection.
