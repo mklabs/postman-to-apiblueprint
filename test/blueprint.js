@@ -15,6 +15,7 @@ describe('postman-to-apiblueprint', () => {
       path.join(__dirname, '../examples/readme.md'),
       'utf8'
     );
+
     const parsed = await parse(file);
 
     // fs.writeFileSync(path.join(__dirname, 'blueprint.json'), JSON.stringify(parsed, null, 2));
