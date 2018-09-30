@@ -6,7 +6,7 @@
   "bin": "bin/postman-to-apiblueprint.js",
   "scripts": {
     "generate-examples": "postman-to-apiblueprint examples/quizz.example.postman_collection.v2.1.json --domain http://localhost:3000 > examples/readme.md",
-    "test": "npm run generate-examples && mocha"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
